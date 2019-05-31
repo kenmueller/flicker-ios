@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTRAS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="tvh-TP-gDU">
-                                <rect key="frame" x="233" y="272" width="69" height="24"/>
+                                <rect key="frame" x="232.99999999999997" y="272" width="68.666666666666657" height="24"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -190,6 +190,7 @@
                             <constraint firstItem="pjM-b1-Cj9" firstAttribute="top" secondItem="x4t-jm-hho" secondAttribute="bottom" constant="60" id="XQ5-Kt-90k"/>
                             <constraint firstItem="tvh-TP-gDU" firstAttribute="top" secondItem="x4t-jm-hho" secondAttribute="bottom" constant="100" id="Za3-ow-cXf"/>
                             <constraint firstItem="x4t-jm-hho" firstAttribute="top" secondItem="G4h-wS-jEs" secondAttribute="top" constant="100" id="Zwo-js-PKM"/>
+                            <constraint firstItem="G4h-wS-jEs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tvh-TP-gDU" secondAttribute="trailing" constant="20" id="a21-1K-sQe"/>
                             <constraint firstItem="G4h-wS-jEs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DWV-w6-5Wr" secondAttribute="trailing" constant="60" id="anw-mF-tqt"/>
                             <constraint firstItem="G4h-wS-jEs" firstAttribute="bottom" secondItem="1Ub-id-GIc" secondAttribute="bottom" constant="60" id="cq6-Ue-rdK"/>
                             <constraint firstItem="1Ub-id-GIc" firstAttribute="centerX" secondItem="8dz-2J-fXm" secondAttribute="centerX" id="dPQ-Iz-fNt"/>
