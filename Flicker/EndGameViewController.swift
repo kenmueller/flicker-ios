@@ -13,10 +13,6 @@ class EndGameViewController: UIViewController {
 	var status: GameEndStatus?
 	var selectedColor: UIColor?
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		guard let endType = endType, let status = status else { return }

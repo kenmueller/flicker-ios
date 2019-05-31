@@ -19,10 +19,6 @@ class ViewController: UIViewController {
 	var countDownSeconds = 3
 	var endStatus: (endType: GameEndType, status: GameEndStatus, astras: Int, selectedColor: UIColor)?
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		super.prepare(for: segue, sender: self)
 		guard let endGameVC = segue.destination as? EndGameViewController, let endStatus = endStatus else { return }
