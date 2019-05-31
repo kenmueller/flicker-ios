@@ -29,6 +29,7 @@
 		4D5F1F7B22A0DB7800AC7732 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F1F6C22A0DB7800AC7732 /* Nunito-BlackItalic.ttf */; };
 		4D5F1F7D22A0DB7800AC7732 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F1F6E22A0DB7800AC7732 /* Nunito-Italic.ttf */; };
 		4D5F1F7E22A0DB7800AC7732 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F1F6F22A0DB7800AC7732 /* Nunito-LightItalic.ttf */; };
+		4D5F1F8022A196D000AC7732 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5F1F7F22A196D000AC7732 /* EndGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		4D5F1F6C22A0DB7800AC7732 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 		4D5F1F6E22A0DB7800AC7732 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		4D5F1F6F22A0DB7800AC7732 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		4D5F1F7F22A196D000AC7732 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				4D5F1F2F22A0DAFF00AC7732 /* AppDelegate.swift */,
 				4D5F1F3122A0DAFF00AC7732 /* ViewController.swift */,
+				4D5F1F7F22A196D000AC7732 /* EndGameViewController.swift */,
 				4D5F1F3322A0DAFF00AC7732 /* Main.storyboard */,
 				4D5F1F3922A0DB0100AC7732 /* Assets.xcassets */,
 				4D5F1F3B22A0DB0100AC7732 /* LaunchScreen.storyboard */,
@@ -325,6 +328,7 @@
 			files = (
 				4D5F1F3822A0DAFF00AC7732 /* Flicker.xcdatamodeld in Sources */,
 				4D5F1F3222A0DAFF00AC7732 /* ViewController.swift in Sources */,
+				4D5F1F8022A196D000AC7732 /* EndGameViewController.swift in Sources */,
 				4D5F1F3022A0DAFF00AC7732 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

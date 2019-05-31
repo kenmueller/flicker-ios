@@ -17,9 +17,19 @@ class ViewController: UIViewController {
 	var astras = 0
 	var state = GameState.ready
 	var countDownSeconds = 3
+	var endStatus: (endType: GameEndType, status: GameEndStatus, astras: Int, selectedColor: UIColor)?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: self)
+		guard let endGameVC = segue.destination as? EndGameViewController, let endStatus = endStatus else { return }
+		endGameVC.status = endStatus.status
+		endGameVC.endType = endStatus.endType
+		endGameVC.astras = endStatus.astras
+		endGameVC.selectedColor = endStatus.selectedColor
 	}
 	
 	@IBAction func clickedScreen() {
@@ -77,7 +87,8 @@ class ViewController: UIViewController {
 	func endGame(_ type: GameEndType) {
 		state = .waiting
 		timer.invalidate()
-		// TODO: Show modal
+		endStatus = (endType: type, status: currentIndex == 0 ? .win : .lose, astras: astras, selectedColor: colors[currentIndex])
+		performSegue(withIdentifier: "end", sender: self)
 	}
 	
 	func flicker() {
@@ -113,4 +124,9 @@ enum GameState {
 enum GameEndType {
 	case selectedColor
 	case timeUp
+}
+
+enum GameEndStatus {
+	case win
+	case lose
 }
