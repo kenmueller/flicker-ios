@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 		switch state {
 		case .ready:
 			startGame()
-		case .starting:
+		case .waiting:
 			AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 		case .inProgress:
 			endGame()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 	}
 	
 	func startGame() {
-		state = .starting
+		state = .waiting
 		timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
 			if self.countDownSeconds == 0 {
 				UIView.animate(withDuration: 0.25, animations: {
@@ -39,6 +39,7 @@ class ViewController: UIViewController {
 					guard $0 else { return }
 					self.timer.invalidate()
 					self.countDownLabel.isHidden = true
+					self.countDownSeconds = 3
 					self.startTimer()
 				}
 			} else {
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
 	}
 	
 	func startTimer() {
+		state = .inProgress
 		timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
 			self.seconds += 0.1
 			self.updateTimeLabel()
@@ -56,13 +58,9 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	func endTimer() {
-		timer.invalidate()
-		// show modal
-	}
-	
 	func endGame() {
-		
+		state = .waiting
+		timer.invalidate()
 	}
 	
 	func updateTimeLabel() {
@@ -82,6 +80,6 @@ class ViewController: UIViewController {
 
 enum GameState {
 	case ready
-	case starting
 	case inProgress
+	case waiting
 }
