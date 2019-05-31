@@ -44,14 +44,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-tp-VRJ">
-                                <rect key="frame" x="0.0" y="260" width="414" height="245"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-tp-VRJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <connections>
                                     <action selector="clickedScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="brV-DR-wwd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTRAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-tB-I2o">
-                                <rect key="frame" x="233" y="665" width="69" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTRAS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-tB-I2o">
+                                <rect key="frame" x="232.99999999999997" y="665" width="68.666666666666657" height="24"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +66,7 @@
                             <constraint firstItem="bhV-tp-VRJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O3p-7H-HAw"/>
                             <constraint firstItem="bhV-tp-VRJ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="OdW-d5-fiQ"/>
                             <constraint firstItem="XK3-z3-Yhf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Utq-bN-4bp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wmt-tB-I2o" secondAttribute="trailing" constant="20" id="ZHz-bN-Erf"/>
                             <constraint firstItem="zju-Vf-60F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjq-7c-Hb5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wmt-tB-I2o" secondAttribute="bottom" constant="47" id="jts-oX-b1h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XK3-z3-Yhf" secondAttribute="trailing" constant="60" id="nX7-DX-xcE"/>
