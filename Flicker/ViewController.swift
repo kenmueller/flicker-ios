@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 	var currentIndex = 0
 	var timer: Timer!
 	var flickerLimit = 0.0
-	var flickerIncrease = 1.3
+	var flickerIncrease = 1.05
 	var seconds = 0.0
 	var astras = 0
 	var state = GameState.ready
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
 			if self.seconds < Double(self.maxSeconds) {
 				if self.seconds >= self.flickerLimit {
 					self.flicker()
-					self.flickerIncrease /= 1.1
+					self.flickerIncrease /= 1.11
 					self.flickerLimit += self.flickerIncrease
 				}
 				self.seconds += 0.1
