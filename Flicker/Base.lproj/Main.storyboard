@@ -166,7 +166,7 @@
                                     <constraint firstItem="Oda-07-1rw" firstAttribute="leading" secondItem="x4t-jm-hho" secondAttribute="leading" id="ujK-qw-SAR"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-b1-Cj9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-b1-Cj9">
                                 <rect key="frame" x="189" y="232" width="36" height="82"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="60"/>
                                 <nil key="textColor"/>

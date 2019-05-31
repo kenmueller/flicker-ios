@@ -41,6 +41,8 @@ class ViewController: UIViewController {
 	
 	func startGame() {
 		state = .waiting
+		updateCountDownLabel()
+		countDownSeconds -= 1
 		timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
 			if self.countDownSeconds == 0 {
 				UIView.animate(withDuration: 0.25, animations: {
@@ -50,7 +52,7 @@ class ViewController: UIViewController {
 					guard $0 else { return }
 					self.timer.invalidate()
 					self.countDownLabel.isHidden = true
-					self.countDownSeconds = 3
+					self.countDownSeconds = 4
 					self.startTimer()
 				}
 			} else {
@@ -107,7 +109,15 @@ class ViewController: UIViewController {
 	}
 	
 	func updateCountDownLabel() {
-		countDownLabel.text = countDownSeconds == 0 ? "GO!" : String(countDownSeconds)
+		UIView.animate(withDuration: 0.5, animations: {
+			self.countDownLabel.alpha = 0
+			self.countDownLabel.transform = CGAffineTransform(scaleX: 2, y: 2)
+		}) {
+			guard $0 else { return }
+			self.countDownLabel.alpha = 1
+			self.countDownLabel.transform = .identity
+			self.countDownLabel.text = self.countDownSeconds == 0 ? "GO!" : String(self.countDownSeconds)
+		}
 	}
 }
 
