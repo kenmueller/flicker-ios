@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
         <array key="Nunito-ExtraBold.ttf">
             <string>Nunito-ExtraBold</string>
         </array>
@@ -23,9 +26,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-z3-Yhf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-z3-Yhf">
                                 <rect key="frame" x="60" y="50" width="294" height="55"/>
                                 <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zju-Vf-60F">
+                                <rect key="frame" x="189" y="624" width="36" height="82"/>
+                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,31 +44,50 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Astras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zju-Vf-60F">
-                                <rect key="frame" x="60" y="641" width="294" height="55"/>
-                                <fontDescription key="fontDescription" name="Nunito-ExtraBold" family="Nunito" pointSize="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-tp-VRJ">
+                                <rect key="frame" x="0.0" y="260" width="414" height="245"/>
+                                <connections>
+                                    <action selector="clickedScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="brV-DR-wwd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTRAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-tB-I2o">
+                                <rect key="frame" x="233" y="665" width="69" height="24"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wmt-tB-I2o" firstAttribute="leading" secondItem="zju-Vf-60F" secondAttribute="trailing" constant="8" id="6ZN-51-lvi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BVr-E8-61H" secondAttribute="trailing" constant="60" id="BLE-Ca-TL1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zju-Vf-60F" secondAttribute="trailing" constant="60" id="EnA-rZ-xs2"/>
                             <constraint firstItem="BVr-E8-61H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ke6-gW-h0L"/>
-                            <constraint firstItem="zju-Vf-60F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="M4y-HL-Z3t"/>
                             <constraint firstItem="XK3-z3-Yhf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="NyR-bs-QpN"/>
+                            <constraint firstItem="bhV-tp-VRJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="O3p-7H-HAw"/>
+                            <constraint firstItem="bhV-tp-VRJ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="OdW-d5-fiQ"/>
                             <constraint firstItem="XK3-z3-Yhf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Utq-bN-4bp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XK3-z3-Yhf" secondAttribute="trailing" constant="60" id="nX7-DX-xcE"/>
+                            <constraint firstItem="zju-Vf-60F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjq-7c-Hb5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wmt-tB-I2o" secondAttribute="bottom" constant="47" id="jts-oX-b1h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XK3-z3-Yhf" secondAttribute="trailing" constant="60" id="nX7-DX-xcE"/>
                             <constraint firstItem="BVr-E8-61H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="oxn-k3-giv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zju-Vf-60F" secondAttribute="bottom" constant="40" id="p5c-nf-1h7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zju-Vf-60F" secondAttribute="bottom" constant="30" id="p5c-nf-1h7"/>
+                            <constraint firstItem="XK3-z3-Yhf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qvc-cj-Uk3"/>
                             <constraint firstItem="BVr-E8-61H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sE9-7V-X9o"/>
+                            <constraint firstItem="bhV-tp-VRJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="sQy-Pk-T4c"/>
+                            <constraint firstItem="bhV-tp-VRJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yHD-SI-vV3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="astrasDescriptionLabel" destination="Wmt-tB-I2o" id="WWg-Oz-4Ln"/>
+                        <outlet property="astrasLabel" destination="zju-Vf-60F" id="tXv-Y1-Hge"/>
+                        <outlet property="countDownLabel" destination="BVr-E8-61H" id="LaJ-SS-Lf4"/>
+                        <outlet property="timeLabel" destination="XK3-z3-Yhf" id="tJt-lh-eKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="24.456521739130437"/>
         </scene>
     </scenes>
 </document>
